@@ -4,7 +4,7 @@
 // document.querySelector('.message').textContent = '🎉 Correct Number!';
 
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
-let score = 20; //state variable
+let score = 5; //state variable
 let highScore = 0;
 
 //refactoring (don't repeat yourself)
@@ -45,7 +45,7 @@ document.querySelector('.score').textContent = score -1 ; document.querySelector
 
 //again button
 document.querySelector('.again').addEventListener('click', function() {
-    score = 20;
+    score = 5;
     secretNumber =  Math.trunc(Math.random() * 20) + 1;
 
     // document.querySelector('.message').textContent = 'Start guessing...';
